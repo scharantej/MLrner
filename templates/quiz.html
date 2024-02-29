@@ -1,0 +1,43 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Machine Learning Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Machine Learning Quiz</h1>
+
+<nav>
+<a href="/">Home</a>
+<a href="/lesson/1">Lessons</a>
+<a href="/quiz/1">Quizzes</a>
+</nav>
+
+<main>
+<h2>Quiz {{ quiz_id }}</h2>
+
+<p>This quiz will test your knowledge of machine learning.</p>
+
+<form action="/quiz-submit" method="POST">
+<ol>
+<li>What is machine learning?</li>
+<input type="text" name="answers[]" required>
+<li>Name three applications of machine learning.</li>
+<input type="text" name="answers[]" required>
+<li>What is the difference between supervised and unsupervised learning?</li>
+<input type="text" name="answers[]" required>
+</ol>
+
+<input type="submit" value="Submit">
+</form>
+</main>
+
+<footer>
+<p>Copyright &copy; 2023 Machine Learning App</p>
+</footer>
+</body>
+</html>
+
